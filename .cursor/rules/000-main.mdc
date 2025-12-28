@@ -1,0 +1,21 @@
+---
+description: 專案核心協調員，負責導引 AI 理解專案架構與工作流
+globs: 
+alwaysApply: true
+---
+
+# 🚀 專案啟動與協調規則
+
+## 1. 初始化專案
+每當開始新的對話，或使用者輸入「啟動專案」時，你必須：
+1. 讀取 `docs/index.md` 了解文件結構。
+2. 讀取 `docs/spec.md` 了解專案目標。
+3. 讀取 `docs/tasks/todo.md` 了解目前進度。
+
+## 2. 寫作規範
+- 程式碼必須符合 `docs/specs/architecture.md` 中的架構設計。
+- 遇到報錯或反覆修復的情況，主動更新 `docs/error_log.md`。
+
+## 3. 自動同步
+- 完成任務後，主動詢問是否更新 `todo.md`。
+- 修改技術細節時，提醒使用者檢查 `docs/specs/` 下的文件。
